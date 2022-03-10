@@ -45,9 +45,9 @@ mongoose
     .then(() => {
     return Recipe.deleteOne( {title: "Carrot Cake"})
   })
-    /*.then(() => {
+    .then(() => {
     return mongoose.connection.close()
-  })*/
+  })
     .then(() => {
     console.log(mongoose.connection.readyState)
   })
